@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "71558991377",
+    "firebase_url": "https://easy-approach-login-form.firebaseio.com",
+    "project_id": "easy-approach-login-form",
+    "storage_bucket": "easy-approach-login-form.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71558991377:android:2f5ec5e54add2c08206bb0",
+        "android_client_info": {
+          "package_name": "com.example.easyapproachloginform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71558991377-ad5aqctfga30hpdddr7bpmkg1pse77eh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7m38ILTGCpnP-5wpRhrHBZ269femkDKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71558991377-ad5aqctfga30hpdddr7bpmkg1pse77eh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71558991377:android:2ded6f1773368210206bb0",
+        "android_client_info": {
+          "package_name": "com.example.loginform1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71558991377-ad5aqctfga30hpdddr7bpmkg1pse77eh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7m38ILTGCpnP-5wpRhrHBZ269femkDKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71558991377-ad5aqctfga30hpdddr7bpmkg1pse77eh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71558991377:android:959a6a162593b656206bb0",
+        "android_client_info": {
+          "package_name": "com.example.saloonapp23062020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71558991377-ad5aqctfga30hpdddr7bpmkg1pse77eh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7m38ILTGCpnP-5wpRhrHBZ269femkDKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71558991377-ad5aqctfga30hpdddr7bpmkg1pse77eh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
