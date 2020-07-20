@@ -1,30 +1,31 @@
-
 //import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:saloonapp23062020/Services/googleSignIn.dart';
+
 import 'package:saloonapp23062020/Route/route_genrator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:saloonapp23062020/Screen/HomeScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:saloonapp23062020/Services/googleSignIn.dart';
 import 'Registration.dart';
 import 'package:saloonapp23062020/Services/auth.dart';
+
 class LoginScreen extends StatelessWidget {
-  final _emailController =TextEditingController();
-  final _passController =TextEditingController();
+  final _emailController = TextEditingController();
+  final _passController = TextEditingController();
 
-  Future<FirebaseUser> login(String email,String pass) async{
-    FirebaseAuth _auth=FirebaseAuth.instance;
+  Future<FirebaseUser> login(String email, String pass) async {
+    FirebaseAuth _auth = FirebaseAuth.instance;
 
-    try{
-
-      AuthResult result=await _auth.signInWithEmailAndPassword(email: email, password: pass);
-      FirebaseUser user=result.user;
+    try {
+      AuthResult result =
+          await _auth.signInWithEmailAndPassword(email: email, password: pass);
+      FirebaseUser user = result.user;
       print(user);
       return user;
-
-    }catch(e){
+    } catch (e) {
       return null;
     }
-
-
   }
 
 
@@ -95,29 +96,19 @@ class LoginScreen extends StatelessWidget {
               ),
               Container(
                 child: MaterialButton(
-                    child:Text("login with google"),
+                    child: Text("login with google"),
                     color: Colors.white,
                     textColor: Colors.amberAccent,
 
                     onPressed: () async {
+                      // final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
 
-                      String res = await AuthService(). signInWithGoogle();
-                      if (true) {
-                        Navigator.of(context).push(MaterialPageRoute(
-
-                            builder: (context) => HomeScreen(
-                                name: res,
-                                imageUrl: res)
-                        )
-                        );
-                      }
-                      if (res.isEmpty)
-                        print("error with google");
-
-
-
-                    }
-                ) ,
+                      final user = await googleSignIn().googleLogIn();
+                      Navigator.of(context).pushNamed('/homescreen',
+                          arguments: (
+                              //pass the object not the detail
+                              user));
+                    }),
               ),
               Container(
                 child: MaterialButton(
@@ -129,13 +120,8 @@ class LoginScreen extends StatelessWidget {
                         '/registration',
                         arguments: "hello from register page",
                       );
-
-                      
                     }
                 ),
-                
-                
-                
               ),
             ],
           ),
